@@ -1,1 +1,6 @@
 # warmup_project
+
+Driving in a square Robot Behavior:
+- We need the robot to drive in a square, which we can accomplish by setting the robot's velocity to a certain constant for a certain amount of time, then using angular velocity to rotate the robot 90 degrees and move in that direction for the same length of time, and so on until the robot has completed the square. Elements of this problem include limitations of our robot's movement in that it can only move forward/backward and not to the side, which is solved by changing the angular velocity.This was accomplished with cmd_vel using Twist and Vector 3 types from geometry_msgs to publish the angular and linear velocities.
+- The init self function creates th node that we will publsih our commands to, and we set the initial angular and linear velocities for the robot. The run function uses rospy.Rate to specify the rate of our loop to 1 Hz and initializes our timer to 0, and the conditional changes the angular velocity to rotate the robot 90 degrees only every 10 iterations (through the loop) and then publishes these changes.
+-recorded gif: ![Driving in a square gif](drive_square.gif)
