@@ -32,8 +32,5 @@
     If I had more time I would definitely play around with the movement of the robot when following something that requires changing both linear and angular velocity. While I feel my program does an adequate job, it could be much smoother. In additin, for the person follower I have a small buffer for the angle that mostly smooths out the movement while still having the robot follow the object pretty much exactly, but I would like to see if there's a way to make it more precise without sacrificing time/smoothness of movement.
 
 <h2>Takeaways:</h2>
-
     - I spent a long time trying to make my initial solution for wall follower work, however never had success with that method. I then took a break, thought about how I wanted to solve it (from the beginning) and designed a new solution which I was able to make work. I think looking for other ways of solving a problem instead of just trying to fix the broken solution is a big takeaway for me for the future, and will hopefully help in debugging/arriving at a working solution.
-
     - Understanding the correlation between angle and index for the range away was something i didn't realize at first, but really helped me once I did. I also didn't know that scan had a range maximum, So I guess my main take away would just be to make sure I'm familiar with the topics/messages I'm using (beyond what rostopic info/rosmsg show tell you).
-    
